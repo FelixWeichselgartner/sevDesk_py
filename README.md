@@ -9,7 +9,7 @@ Setup:
 * Have a valid [sevDesk](https://sevdesk.com/) account
 * Create a `secret_data.py` file, which contains:
     * `sev_mail = "<your mail here>"`
-    * `api_token = "<your api key here>`
+    * `api_token = "<your api key here>"`
 * Check `test.py` to see how it works
 
 
