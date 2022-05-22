@@ -15,4 +15,4 @@ Setup:
 
 ## License
 
-GNU General Public License Version 3, see [License](./License.md)
+GNU Lesser General Public License Version 3, see [License](./License.md)
