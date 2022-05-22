@@ -12,6 +12,7 @@ def get_phone_mail_from_communications(communications, customer_id):
     phone = None
     mail = None
     more_data = None
+    status = True
     for c in communications:
         if c['contact']['id'] == customer_id:
             if c['key']['id'] == '2':
@@ -27,7 +28,8 @@ def get_phone_mail_from_communications(communications, customer_id):
             print(f'please check the customer with number {phone}, {mail}')
             print(more_data)
             print('this does not seem like a phone number to me')
-    return phone, mail
+            status = False
+    return phone, mail, status
 
 
 class sevDesk:
