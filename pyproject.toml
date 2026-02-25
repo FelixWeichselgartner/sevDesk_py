@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sevdesk-py"
+version = "0.1.0"
+description = "Python API client for sevDesk"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "License.md" }
+authors = [
+  { name = "Felix Weichselgartner" }
+]
+dependencies = [
+  "requests>=2.0"
+]
+keywords = ["sevdesk", "api", "client"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+  "Operating System :: OS Independent"
+]
+
+[tool.setuptools]
+py-modules = ["sevDesk"]
+package-dir = {"" = "src"}
+include-package-data = false
